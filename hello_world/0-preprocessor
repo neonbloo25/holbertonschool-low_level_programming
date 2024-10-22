@@ -1,2 +1,2 @@
 #!/bin/bash
-source CFILE ; gcc $CFILE -o c
+gcc "$CFILE" -o "c"
