@@ -1,10 +1,18 @@
 #include <stdio.h>
 /**
- * main - i guess were literally gonna say that huh
+ * main - GIMME A P! GIMME A U...!
  * Return: 0 (Success)
  */
 int main(void)
 {
-	printf("_putchar\n");
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
 	return (0);
 }
