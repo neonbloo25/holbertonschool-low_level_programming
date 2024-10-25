@@ -3,6 +3,7 @@
 #include "main.h"
 /**
  * _islower - checks if the variable is a lowercase character.
+ * @c: C represents the thing, what, dont ask me, go away
  * Return: 0 (Success)
  */
 
