@@ -1,5 +1,5 @@
 /**
- * added 0
+ * all 11, present
  */
 int _putchar(char c);
 void print_alphabet(void);
