@@ -4,13 +4,12 @@
  * _abs - will compute the absolute value of an integer
  * @c: will become positive if negative
  *
- * Return: 0 (Success)
+ * Return: absolute version of the number (Success)
  */
 int _abs(int c)
 {
 	if (c < 0)
-		c = ? -c : c;
+		return (-c);
 	else
-		c = c;
-	return (0);
+		return (c);
 }
