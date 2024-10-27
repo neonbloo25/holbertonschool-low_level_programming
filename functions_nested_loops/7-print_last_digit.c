@@ -10,8 +10,13 @@
 
 int print_last_digit(int x)
 {
-	while (x >= 10)
-		x /= 10;
+	int remainder;
 
-	return (x);
+	remainder = x % 10;
+
+	if (remainder < 0)
+		remainder = remainder * -1;
+
+	_putchar(remainder + '0');
+	return (remainder);
 }
