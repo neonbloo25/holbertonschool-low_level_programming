@@ -1,8 +1,15 @@
-#include <stdlib.h>
+#include "main.h"
+/**
+ * print_numbers - teaches us how to count
+ */
 
-\**\
-
-int main(void)
+void print_numbers(void)
 {
-    return (0);
+	int num = 0;
+
+	while (num < 9)
+	{
+		_putchar(num);
+		num++;
+	}
 }
