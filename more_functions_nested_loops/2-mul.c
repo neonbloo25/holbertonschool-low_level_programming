@@ -1,8 +1,16 @@
-#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+/**
+ * mul - We multiplyin'
+ * @a: factor 1
+ * @b: factor 2
+ *
+ * Return: result of multiplication
+ */
 
-\**\
-
-int main(void)
+int mul(int a, int b)
 {
-    return (0);
+	int result = a * b;
+
+	return (result);
 }
