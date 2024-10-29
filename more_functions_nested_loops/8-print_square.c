@@ -1,8 +1,20 @@
-#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 
-\**\
+/**
+ * print_square - prints a box
+ * @size: measurement of box
+ */
 
-int main(void)
+void print_square(int size)
 {
-    return (0);
+	int x, y;
+
+	for (x = 0; x < size; x++)
+	{
+		for (y = 0; y <= size - 1; y++)
+			_putchar('#');
+		_putchar('\n');
+	}
+	_putchar('\n');
 }
