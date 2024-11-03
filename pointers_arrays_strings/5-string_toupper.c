@@ -7,8 +7,10 @@
  */
 char *string_toupper(char *word)
 {
-	int i = 0;
-	int swap = 'a' - 'A';
+	int i, swap;
+
+	i = 0;
+	swap = 'a' - 'A';
 
 	for ( i = 0; word[i] != '\0' ; ++i)
 	{
