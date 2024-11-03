@@ -3,11 +3,12 @@
  * _strncat - will link two strings together
  * @dest: string 1
  * @src: string 2
- * Returns: the resulting dest string
+ * @n: specified amount
+ * Return: the resulting dest string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i,x;
+	int i, x;
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{}
