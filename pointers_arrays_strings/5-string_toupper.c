@@ -12,7 +12,7 @@ char *string_toupper(char *word)
 	i = 0;
 	swap = 'a' - 'A';
 
-	for ( i = 0; word[i] != '\0' ; ++i)
+	for (i = 0; word[i] != '\0' ; ++i)
 	{
 		if (word[i] >= 'a' && word[i] <= 'z')
 		{
