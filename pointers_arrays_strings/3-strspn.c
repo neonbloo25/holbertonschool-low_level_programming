@@ -3,6 +3,7 @@
  * _strspn - locates specific chars
  * @s: target to search
  * @accept: search term(s)
+ * Return: Search results
  */
 unsigned int _strspn(char *s, char *accept)
 {
