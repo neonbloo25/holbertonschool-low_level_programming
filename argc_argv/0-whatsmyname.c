@@ -3,11 +3,14 @@
  * main - prints filename
  * @argc: argument count
  * @argv: argument vector
- * Return: well i HAD to give argc something to do!
+ * Return: zero
  */
 int main(int argc, char *argv[])
 {
+	if (argc == 50)
+		return (-1);
+
 	printf("%s\n", argv[0]);
 
-	return (argc);
+	return (0);
 }
