@@ -10,28 +10,69 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d2;
+	dog_t *new_d = NULL;
 
-	d2 = malloc(sizeof(dog_t));
-	if (d2 == NULL)
-		return (NULL);
-
-	d2->name = strdup(name);
-	if (d2->name == NULL)
+	new_d = malloc(sizeof(dog_t));
+	if (new_d != NULL)
 	{
-		free(d2);
-		return (NULL);
+		new_d->name = _strdup(name);
+		if (new_d->name == NULL)
+		{
+			free(new_d);
+			return (NULL);
+		}
+		new_d->owner = _strdup(owner);
+		if (new_d->owner == NULL)
+		{
+			free(new_d->name);
+			free(new_d);
+			return (NULL);
+		}
+		new_d->age = age;
 	}
+	return (new_d);
+}
 
-	d2->age = age;
+/**
+ * _strlen - returns the length of a string.
+ * @s: pointer to check
+ *
+ * Return: Always 0.
+ */
+int _strlen(char *s)
+{
+	int len = 0;
 
-	d2->owner = strdup(owner);
-	if (d2->owner == NULL)
+	while (*s)
 	{
-		free(d2->name);
-		free(d2);
-		return (NULL);
+		len++;
+		s = s + 1;
 	}
+	return (len);
+}
 
-	return (d2);
+/**
+ * _strdup - copy of the string given as a parameter
+ * @str: string of char
+ *
+ * Description: The _strdup() function returns a pointer to a new string which
+ * is a duplicate of the string str.
+ * Returns NULL if str = NULL
+ *
+ * Return: a pointer to the duplicated string.
+ */
+
+char *_strdup(char *str)
+{
+	char *res = NULL;
+	int i = 0;
+
+	if (str != NULL)
+		res = malloc(_strlen(str) + 1);
+	if (res != NULL)
+	{
+		for (i = 0; i <= _strlen(str); i++)
+			res[i] = str[i];
+	}
+	return (res);
 }
