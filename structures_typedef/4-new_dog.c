@@ -57,7 +57,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strdup - returns a pointer to a new string which is a duplicate of the string str.
+ * _strdup - returns a pointer with a duplicate str
  * @str: string to duplicate
  * Return: pointer to the duplicated string, or NULL if str is NULL
  */
