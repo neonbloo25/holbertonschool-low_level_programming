@@ -4,6 +4,9 @@
 #include <stdarg.h>
 /**
  * Prototype lines
+ * _putchar - the man of the hour
+ * @c: n his lovely wife
+ * Return: stufffffffff
  */
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
