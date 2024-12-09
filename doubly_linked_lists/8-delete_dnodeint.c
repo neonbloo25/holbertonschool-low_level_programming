@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * delete_dnodeint_at_index - if you dont know what it does by now go back to school, please
+ * delete_dnodeint_at_index - deletes specified node
  * @head: list
  * @index: target node
  * Return: 1/-1
@@ -9,7 +9,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *temp = *head;
 
-	if(*head == NULL)
+	if (*head == NULL)
 		return (-1);
 
 	for (; index != 0; index--)
