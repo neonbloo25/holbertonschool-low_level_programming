@@ -3,7 +3,7 @@
  * delete_dnodeint_at_index - if you dont know what it does by now go back to school, please
  * @head: list
  * @index: target node
- * Return" 1/-1
+ * Return: 1/-1
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
