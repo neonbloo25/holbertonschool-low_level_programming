@@ -7,7 +7,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t x, y, z;
+	ssize_t o, r, w;
 	char *ptr;
 
 	if (filename == NULL)
@@ -17,18 +17,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (ptr == NULL)
 		return (0);
 
-	x = open(filename, O_RDONLY);
-	y = read(x, ptr, letters);
-	z = write(STDOUT_FILENO, ptr, y);
+	o = open(filename, O_RDONLY);
+	r = read(o, ptr, letters);
+	w = write(STDOUT_FILENO, ptr, r);
 
-	if (x == -1 || y == -1 || z == -1 || z != y)
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(ptr);
-		return (x);
+		return (o);
 	}
 
 	free(ptr);
-	close(x);
+	close(o);
 
-	return (z);
+	return (w);
 }
