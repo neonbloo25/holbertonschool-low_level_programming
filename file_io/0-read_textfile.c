@@ -4,6 +4,7 @@
  * @filename: Subject file
  * @letters: Amount of content to print
  * Return: NULL/open or write "x/z"
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t x, y, z;
