@@ -3,7 +3,7 @@
  * append_text_to_file - adds content to existing content on file
  * @filename: lable for file
  * @text_content: its filling
- * Return 1/-1
+ * Return: 1/-1
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
@@ -30,6 +30,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	w = write(o, text_content, len);
 	if (w == -1)
 		return (-1);
-	close (o);
+	close(o);
 	return (1);
 }
